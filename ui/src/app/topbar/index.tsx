@@ -52,20 +52,26 @@ const Topbar = ({
           size="lg"
           hiddenFrom="md"
         >
-          <img src="/mogh-512x512.png" width={32} alt="moghtech" />
+          <img src="/mogh-512x512.png" width={32} alt="atom" />
         </ActionIcon>
         <Button
           variant="subtle"
           c="inherit"
           leftSection={
-            <img src="/mogh-512x512.png" width={32} alt="moghtech" />
+            <img src="/mogh-512x512.png" width={32} alt="atom" />
           }
           onClick={() => nav("/")}
           size="lg"
           visibleFrom="md"
         >
-          <Text fz="h2" fw="450" lts="0.1rem">
-            KOMODO
+          {/* Atom rebrand (gravicity-trunk): Geist 600 · 1.95rem · 0.11em tracking */}
+          <Text
+            fz="1.95rem"
+            fw="600"
+            lts="0.11em"
+            style={{ fontFamily: "'Geist', system-ui, sans-serif" }}
+          >
+            ATOM
           </Text>
         </Button>
       </Group>
